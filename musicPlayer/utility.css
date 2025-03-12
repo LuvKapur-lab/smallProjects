@@ -12,10 +12,6 @@
     margin: 3px;
 }
 
-.bg-black{
-    background-color: black;
-    color: white;
-}
 
 .bg-gray{
     background-color: #121212;
@@ -32,4 +28,37 @@
 
 .p-1{
     padding: 10px;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+
+
+
+
+/* WebKit Scrollbar (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Dark background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333; /* Darker thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444; /* Slightly lighter on hover */
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin; /* Makes scrollbar thinner */
+  scrollbar-color: #333 #1a1a1a; /* Thumb color | Track color */
 }

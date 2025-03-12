@@ -1,26 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
     <title>RampUp</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container flex bg-black">
-        <div class="left">
-            <div class="home bg-gray rounded m-1 p-1">
-                <ul>
-                    <li>Home</li>
-                    <li>Search</li>
-                </ul>
-            </div>
-            <div class="lib bg-gray rounded m-1 p-1">
-                your library
-            </div>
+      <div class="left">
+        <div class="home bg-gray rounded m-1 p-1">
+          <ul>
+            <li>Home</li>
+            <li>Search</li>
+          </ul>
         </div>
-        <div class="right border"></div>
+        <div class="lib bg-gray rounded m-1 p-1">
+          <div class="heading">
+            <h2>Your library</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="right bg-gray rounded p-1">
+        <div class="header">
+          <div class="nav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="fffff"
+              fill="none"
+            >
+              <path
+                d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="fffff"
+              fill="none"
+            >
+              <path
+                d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="musicPlaylist">
+          <h1>RampUp Playlist</h1>
+
+          <div class="cardContainer">
+            <div class="card">
+              <img
+                src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
+                alt=""
+              />
+              <h2>Happy Hits</h2>
+              <p>hits to boost your mood and fill you with happiness</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
+                alt=""
+              />
+              <h2>Happy Hits</h2>
+              <p>hits to boost your mood and fill you with happiness</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="playbar">
+          playbar
+        </div>
+
+
+
+      </div>
     </div>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
