@@ -1,9 +1,9 @@
 let buttons = document.querySelectorAll(".btn");
 let container = document.querySelector(".container");
 
-buttons.forEach(button=>{
-  button.addEventListener("click", switchThemes)
-})
+buttons.forEach((button) => {
+  button.addEventListener("click", switchThemes);
+});
 
 let themes = [
   {
@@ -22,26 +22,23 @@ let themes = [
   },
 ];
 
-
 let isDay = true;
 function switchThemes() {
-  
   isDay = !isDay;
   let theme = isDay ? themes[0] : themes[1]; // Select theme based on isDay
 
   //changes
-  document.querySelector(".musicSelection").style.backgroundColor = theme.color
-  let img = document.querySelector(".pokeImg")
-  img.style.display = "block"
+  document.querySelector(".musicSelection").style.backgroundColor = theme.color;
+  let img = document.querySelector(".pokeImg");
+  img.style.display = "block";
   img.src = theme.bgImg;
 
   //music
-  let audio = document.querySelector(".audio")
+  let audio = document.querySelector(".audio");
   audio.src = theme.music;
-  audio.play()
+  audio.play();
 
-  //music name 
+  //music name
   let name = document.querySelector(".musicName");
-  name.textContent = (`${theme.musicN} Theme`)
-
+  name.textContent = `${theme.musicN} Theme`;
 }

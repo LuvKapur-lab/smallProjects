@@ -71,6 +71,33 @@ html {
   cursor: pointer;
 }
 
-.transition{
-    transition: all 0.3s ease-in-out;
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 700px) {
+  .container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: -500px;
+    /* z-index: -1;  */
+  }
+  .musicSelection {
+    position: absolute;
+    bottom: 10px;
+    height: 80px;
+    width: 100%;
+    max-width: 350px;
+    background: rgba(248, 87, 69, 0.833);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+  }
 }
