@@ -1,5 +1,5 @@
 /* green rgba(0, 128, 0, 0.532) */
-/* purple rgba(225, 0, 255, 0.393) */
+/* blue rgba(81, 0, 255, 0.393); */
 
 * {
   padding: 0;
@@ -12,6 +12,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  background-color: #1a1a1a;
 }
 
 .container {
@@ -25,7 +26,6 @@ html {
 
   position: relative;
 }
-
 .invert {
   filter: invert(1);
 }
@@ -37,7 +37,7 @@ html {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  z-index: -1;
+  /* z-index: -1;  */
 }
 
 .musicSelection {
@@ -46,15 +46,14 @@ html {
   height: 80px;
   width: 100%;
   max-width: 600px;
-  background: transparent;
+  background: rgba(248, 87, 69, 0.833);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   border-radius: 8px;
-  background-color: rgba(225, 0, 255, 0.393);
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .controles {
@@ -70,4 +69,8 @@ html {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.transition{
+    transition: all 0.3s ease-in-out;
 }
