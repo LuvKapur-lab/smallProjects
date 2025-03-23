@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #FAF9F6;
+  color: white;
+}
+
+/* navigation */
+nav {
+  height: 13vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.button-toggle {
+  margin: auto 30px;
+}
+
+/* main */
+main {
+  height: 87vh;
+  width: 100vw;
+  max-width: 780px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.home-info h1 {
+  color: black;
+  font-size: 34px;
+}
+
+.about-me ul li {
+  color: rgb(65, 65, 65);
+  list-style: none;
+  margin-top: 5px;
+}
+.about-me ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.blog {
+  color: rgb(65, 65, 65);
+  line-height: 22px;
+}
+.links {
+  margin-top: 30px;
+}
+
+.links a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* button */
+.btn {
+  border: none;
+  background: transparent;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+/* smooth transition */
+body, .home-info, .f-h1, a, p, img{
+    transition: all 0.2s ease-in-out;
+}

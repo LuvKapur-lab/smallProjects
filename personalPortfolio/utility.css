@@ -1,0 +1,12 @@
+.hidden{
+    display: none;
+}
+
+.margin-top{
+    margin-top: 20px;
+}
+
+.invert{
+    filter: invert(1);
+}
+
