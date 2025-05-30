@@ -1,0 +1,8 @@
+// cloudy weather
+<i class="hgi hgi-stroke hgi-sun-cloud-02"></i>
+
+// rain
+<i class="hgi hgi-stroke hgi-cloud-angled-rain"></i>
+
+//sunny
+<i class="hgi hgi-stroke hgi-sun-03"></i>
