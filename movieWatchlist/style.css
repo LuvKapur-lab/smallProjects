@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0a0a0a;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  min-width: 1200px;
+  min-height: 100vh;
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-width: ;
+  margin-top: 80px;
+}
+#search-movie {
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 200;
+  border: none;
+  outline: none;
+  padding: 12px;
+
+  background-color: #1a1a1a;
+  color: white;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+
+  transition: all 0.7s ease-in-out;
+}
+#search-movie:hover {
+  background-color: red;
+}
+
+#error-message {
+  color: red;
+  font-size: 20px;
+}
+
+.add-movie {
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  padding: 10px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.add-movie:hover {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#movie-input {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  padding: 12px 10px;
+  outline: none;
+
+  font-size: 17px;
+  color: white;
+  background-color: #1a1a1a;
+
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+#movie-description {
+  font-size: 14px;
+  margin-bottom: auto;
+}
+
+.movie-card {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  height: 230px;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.movie-card img {
+  padding: 10px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 20px 0px;
+  height: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+#movie-title {
+  font-size: 20px;
+}
+
+.wishlist {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #1e1e1e;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+#wishlist-movies {
+  border-top: 2px solid rgb(53, 53, 53);
+  width: 100%;
+  margin-top: 10px;
+  list-style: none;
+
+  text-align: center;
+
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#wishlist-movies li {
+  padding: 10px;
+  background: #2a2a2a;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.remove-movie {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: red;
+  color: white;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.remove-movie:hover {
+  background: rgb(158, 0, 0);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Mobile Devices (phones) */
+@media (max-width: 600px) {
+  .container {
+    min-width: 100%;
+    padding: 10px;
+  }
+
+  .searchBox {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  #movie-input {
+    width: 100%;
+    border-radius: 2px;
+  }
+
+  #search-movie {
+    width: 100%;
+    border-radius: 2px;
+  }
+
+  .movie-card {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .movie-card img {
+    object-fit: contain;
+    height: 250px;
+    width: 100%;
+  }
+
+  .movie-info {
+    padding: 10px 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  #movie-description {
+    font-size: 14px;
+  }
+
+  #wishlist-movies li {
+    align-items: center;
+    text-align: left;
+  }
+}
+
+/* Tablet Devices */
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    min-width: 100%;
+    padding: 20px;
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .container {
+    min-width: 90%;
+  }
+
+  .searchBox {
+    flex-direction: row;
+    margin-top: 60px;
+  }
+
+  .movie-card {
+    flex-direction: row;
+  }
+}
+
+/* Large Screens (1200px+) */
+@media (min-width: 1201px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

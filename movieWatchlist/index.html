@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watchlist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Watchlist</h1>
+
+      <div class="searchBox">
+        <input type="text" id="movie-input" placeholder="Search for the movie/series" />
+        <button id="search-movie" class="btn1">Search</button>
+      </div>
+
+      <p id="error-message" class="hidden">movie not found. Try again</p>
+
+      <div class="movie-card hidden">
+        <img
+          src=""
+          alt=""
+          id="movie-Poster"
+        />
+
+        <div class="movie-info">
+          <h3 id="movie-title"></h3>
+          <p id="movie-description">
+          </p>
+          <button class="add-movie">+ Add to Watchlist</button>
+        </div>
+        
+      </div>
+
+      <div class="wishlist">
+        <h2>My Watchlist</h2>
+        <ul id="wishlist-movies">
+
+        </ul>
+      </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
